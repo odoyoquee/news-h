@@ -55,4 +55,7 @@ You need the following to start working on the project on your local computer:
 * Boostrap
 * Flask
 
+## Contacts Info
+- odoyograce23@gmail.com
+- Github-odoyoquee
 
