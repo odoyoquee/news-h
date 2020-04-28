@@ -1,32 +1,36 @@
-{% macro displaySourceList(source_list) %}
+{% extends 'base.html'%}
+{% import 'macros.html' as macro %}
 
-{% for source_row in source_list |batch(4)%}
-<div class="row">
-
-
-    {% for sources in source_row %}
-    <div class="col-md-3" style="margin-bottom: 5px">
-
-        <div class="card mdb-color lighten-3 ">
-            <div class="card-header">
-                <a href="/sources/{{sources.id}}">
-                    {{ sources.name}}
-                </a>
-            </div>
-            <div class="card-body">
-                <p class="text-truncate">
-                    {{ sources.description}}
-
-                </p>
-                <a href="/sources/{{sources.id}}" class="btn btn-success btn-sm">Visit {{sources.name}}</a>
-            </div>
+{% block content%}
+<div class="container-fluid">
+		<!-- Business News Section  -->
+        <h3 class="modal-header"> Top Business News Sources</h3>
 
 
-        </div>
-    </div>
-    {% endfor %}
+        {{ macro.displaySourceList(sources)}}
 
+        <!-- Business News Section  -->
+         
+        <h3 class="modal-header"> Top Technology News Sources</h3>
+
+
+        {{ macro.displaySourceList(technology_sources)}}
+
+        <!-- Entertainment News Section  -->
+         
+        <h3 class="modal-header"> Top Entertainment News Sources</h3>
+
+
+        {{ macro.displaySourceList(entertainment_sources)}}
+
+        <!-- Entertainment News Section  -->
+         
+        <h3 class="modal-header"> Top Sports News Sources</h3>
+
+
+        {{ macro.displaySourceList(sports_sources)}}
+	
 </div>
-{% endfor %}
 
-{% endmacro %}
+
+{%endblock%}

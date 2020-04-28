@@ -39,7 +39,7 @@ You need the following to start working on the project on your local computer:
 * Clone this repository to your local computer.
 * Ensure you have python3.6 installed in your computer.
 * From the terminal navigate to the cloned project folder.
-* Create a virtual environment and access the folder via your virtual amchine.
+* Create a virtual environment and access the folder via your virtual machine.
 * Visit https://newsapi.org/ and register for an API key.
 * Create start.sh file and in it write the following lines:
 ```
@@ -47,6 +47,7 @@ You need the following to start working on the project on your local computer:
  python3.6 manage.py server
 ```
 * Run ```chmod +x start.sh``` followed by ``` ./start.sh ``` while in the project folder to start the project.
+* Once started, the project can be accessed on your localhost using the address: ``` localhost:5000 ```.
 
 
 ## Technologies Used
