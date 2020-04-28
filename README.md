@@ -46,5 +46,13 @@ You need the following to start working on the project on your local computer:
  export NEWS_API_KEY='<Your-Api-Key>'
  python3.6 manage.py server
 ```
-* Run ```chmod +x start.sh``` follwoed by ``` ./start.sh ``` while in the project folder to start the project.
+* Run ```chmod +x start.sh``` followed by ``` ./start.sh ``` while in the project folder to start the project.
+
+
+## Technologies Used
+
+* Python v3.6
+* Boostrap
+* Flask
+
 
